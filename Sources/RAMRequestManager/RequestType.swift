@@ -7,3 +7,5 @@ public enum RequestType: String {
     case PATCH
     case DELETE
 }
+
+public typealias HttpHeaders = [String: String]
