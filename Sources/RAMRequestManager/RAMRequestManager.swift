@@ -1,7 +1,7 @@
 import Foundation
 
 public protocol ApiProtocol {
-    func request<T>(url: String,
+    func request<T>(url: URL,
                  method: RequestType,
                  with parameters: [String: Any]?,
                  queryParams: [String: Any]?,
@@ -11,7 +11,7 @@ public protocol ApiProtocol {
 }
 
 public extension ApiProtocol {
-    func request<T>(url: String,
+    func request<T>(url: URL,
                  method: RequestType,
                  with parameters: [String: Any]?,
                  queryParams: [String: Any]? = nil,
